@@ -1,39 +1,53 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Lab Clinicas (Flutter Experience)
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+[![forthebadge](https://forthebadge.com/images/badges/made-with-flutter.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](http://forthebadge.com)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+[![MIT License](https://img.shields.io/badge/Flutter-3.16.9-blue)](https://docs.flutter.dev/release/release-notes)
+[![MIT License](https://img.shields.io/badge/Dart-3.2.6-blue)](https://docs.flutter.dev/release/release-notes)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Projeto desenvolvido em 01/2024, utilizando o Flutter, com o intuito de aprimorar os conhecimentos no framework, utilizando arquitetura orientada à package, através de um core que será reaproveitado nas plataformas mobile, web e desktop.
 
-## Features
+## Stack utilizada
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+**Mobile:** Flutter (SDK versão inicial: 3.16.9)
 
-## Getting started
+## Packages utilizados no Core
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+| Package                    | Versão | Descrição                                         |
+| :----------------          | :----- | :------------------------------------------------ |
+| `flutter_getit`            | ^2.0.0 | Utilizado para injeção de dependências.           |
+| `signals_flutter`          | ^3.0.0 | Utilizado para gerência de estado no projeto.     |
+| `dio`                      | ^5.4.0 | Utilizado para requisições HTTP.                  |
+| `shared_preferences`       | ^2.2.2 | Utilizado para persistência de dados local.       |
+| `top_snackbar_flutter`     | ^3.1.0 | Utilizado para exibir snackbars customizadas.     |
+| `loading_animation_widget` | ^1.2.0+4 | Utilizado para exibir loaders customizados.     |
+| `asyncstate`               | ^2.1.1-dev.1 | Utilizado para exibir loader em todas as requisições assincronas automaticamente. |
 
-## Usage
+## Como utilizar
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Para utilizar o core, adicione-o como depêndencia de um projeto Flutter no arquivo pubspec.yaml, e adicione como path, o caminho deste package.
 
-```dart
-const like = 'sample';
+Sua depêndencia deve ser configurada de forma similar a esta abaixo:
+
+```yaml
+lab_clinicas_core:
+    path: ../lab_clinicas_core
 ```
 
-## Additional information
+## Dica complementar
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Depois de adicioná-lo como dependência no seu projeto, não se esqueça de obter o pacote:
+
+```bash
+flutter pub get
+```
+
+Qualquer dúvida, entre em contato que estarei disposto a auxiliá-lo!
+
+## Desenvolvedor
+
+### Adilson Junior
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adilsonjuniordev)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adilsonjuniordev/)
